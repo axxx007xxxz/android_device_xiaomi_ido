@@ -102,3 +102,6 @@ persist.timed.enable=true
 
 # WIFI
 wifi.interface=wlan0
+
+# Substratum
+ro.substratum.recreate=true
