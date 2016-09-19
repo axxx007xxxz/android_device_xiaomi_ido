@@ -16,10 +16,10 @@
 
 $(call inherit-product, device/xiaomi/ido/full_ido.mk)
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit some common Candy stuff.
+$(call inherit-product, vendor/candy/config/common_full_phone.mk)
 
-PRODUCT_NAME := cm_ido
+PRODUCT_NAME := candy_ido
 BOARD_VENDOR := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
