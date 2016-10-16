@@ -51,7 +51,19 @@ TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8916
 TARGET_KERNEL_CONFIG := cyanogenmod_ido_defconfig
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
+
+# Kernel Toolchain
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/ubertc-aarch64-linux-androideabi-4.9/bin
+KERNEL_TOOLCHAIN_PREFIX := aarch64-linux-android-
+
+# ROM Toolchain
+TARGET_GCC_VERSION_EXP := 4.9
+
+# Optimizations
+STRICT_ALIASING := false
+CLANG_O3 := true
+ENABLE_GCCONLY := true
+GRAPHITE_OPTS := false
 
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
